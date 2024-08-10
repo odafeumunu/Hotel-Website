@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>ABOUT || ALARCO HOTELS AND SUITES</title>
+
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.png">
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  </head>
+  <body>
+
+    
+    <header class="header inner">
+      <nav>
+        <div class="nav__bar">
+          <div class="logo">
+            <a href="index.html"><img src="assets/logo.png" alt="logo" /></a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="about.html">About</a></li>
+          <li><a href="room.html">Rooms</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="booking.html">
+          <button class="btn nav__btn">Book Now</button>
+        </a>
+      </nav>
+    </header>
+
+
+    <style>
+        .section__container.explore{
+            margin-top: 60px;
+        }
+        .section__container.second{
+            /* box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1); */
+            border: 2px solid #ccc;
+            max-width: 992px;
+        }
+        .section__subheader{
+            text-transform: uppercase;
+        }  
+        .section__container .inner{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 60px 30px;
+            text-align: left;
+        }
+        .explore :is(.section__subheader, .section__header, .section__description),
+        .about :is(.section__subheader, .section__header, .section__description) {
+            text-align: center;
+            margin-inline: auto;
+        }
+
+        @media (max-width: 992px){
+            .section__container .inner{
+                grid-template-columns: subgrid;
+            }
+            .section__container.first{
+                margin-top: 80px;
+            }
+        }
+    </style>
+
+    <section class="section__container explore">
+      <div class="about__content">
+        <p class="section__subheader">Home Away From Home</p>
+        <h2 class="section__header">The Home Of Excellence</h2>
+        <p class="section__description" style="text-align: center;max-width: 700px;margin: auto;">
+          Welcome to Alarco Hotels and Suites, where luxury meets comfort and every moment is crafted to exceed your expectations. Step into an environment that suits the taste of our esteemed guests, offering an ambiance full of enormous excitement and an atmosphere filled with great warmth and freshness. Whether you're here for business or leisure, we ensure that your stay with us is nothing short of extraordinary. Experience the epitome of hospitality at Alarco Hotels and Suites.
+        </p>
+      </div>
+    </section>
+
+    <section class="section__container about__container" id="about">
+      <div class="about__image">
+        <img src="assets/mission.jpg" alt="about" />
+      </div>
+      <div class="about__content">
+        <p class="section__subheader">OUR MISSION</p>
+        <h2 class="section__header">Unparalleled hospitality, valued guests.</h2>
+        <p class="section__description">
+            At the heart of our mission is a commitment to providing unparalleled hospitality, where each interaction is infused with warmth and care. We strive to anticipate and fulfill the unique needs and desires of our valued guests, ensuring that every stay with us is nothing short of extraordinary. Whether it's a relaxing getaway or a special occasion, we are dedicated to crafting experiences that leave a lasting impression and create cherished memories for years to come.
+        </p>
+      </div>
+    </section>
+
+    <section class="section__container about__container" id="about">
+      <div class="about__content">
+        <p class="section__subheader">OUR VISSION</p>
+        <h2 class="section__header">Redefining luxury, one guest at a time.</h2>
+        <p class="section__description">
+            Our vision is to be the epitome of excellence in hospitality, setting new standards of luxury and comfort in the industry. We aspire to create a sanctuary where guests can escape, unwind, and indulge in unparalleled experiences that captivate the senses and rejuvenate the soul. With innovation and passion as our driving forces, we aim to continually elevate our offerings, exceed expectations, and inspire unforgettable moments for every individual who walks through our doors.
+        </p>
+      </div>
+      <div class="about__image">
+        <img src="assets/vission.jpg" alt="about" />
+      </div>
+    </section>
+
+
+    <section class="section__container room__container about">
+        <p class="section__subheader">RECEPTION</p>
+        <h2 class="section__header">Arrive, relax, enjoy. Our reception is here to assist you every step of the way.</h2>
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+              <!-- swiper-slide start -->
+              <div class="room__card swiper-slide">
+                  <div class="room__card__image">
+                      <img src="assets/reception-2.jpg" alt="room" />
+                  </div>
+              </div>
+              <!-- swiper-slide end -->
+
+              <!-- swiper-slide start -->
+              <div class="room__card swiper-slide">
+                  <div class="room__card__image">
+                      <img src="assets/reception-3.jpg" alt="room" />
+                  </div>
+              </div>
+              <!-- swiper-slide end -->
+
+              <!-- swiper-slide start -->
+              <div class="room__card swiper-slide">
+                  <div class="room__card__image">
+                      <img src="assets/reception-4.jpg" alt="room" />
+                  </div>
+              </div>
+              <!-- swiper-slide end -->
+
+              <!-- swiper-slide start -->
+              <div class="room__card swiper-slide">
+                  <div class="room__card__image">
+                      <img src="assets/reception-3.jpg" alt="room" />
+                  </div>
+              </div>
+              <!-- swiper-slide end -->
+
+          </div>
+
+          <!-- control prev/next -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <!-- control prev/next -->
+
+        </div>
+        <!-- swiper end -->
+    </section>
+
+        
+
+
+    
+    
+    <footer class="footer" id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo">
+            <img src="assets/logo.png" alt="logo" />
+          </div>
+          <p class="section__description">
+            Discover a world of comfort, luxury, and adventure as you explore
+            our curated selection of hotels, making every moment of your getaway
+            truly extraordinary.
+          </p>
+          <a href="booking.php">
+            <button class="btn">Book Now</button>
+          </a>
+        </div>
+        <div class="footer__col">
+          <h4>QUICK LINKS</h4>
+          <ul class="footer__links">
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About us | Who we are</a></li>
+            <li><a href="room.html">Rooms and Amenities</a></li>
+            <li><a href="services.html">Our Services</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>OUR SERVICES</h4>
+          <ul class="footer__links">
+            <li><a href="services.html#restaurant">Restaurant</a></li>
+            <li><a href="services.html#bar">Bush Bar</a></li>
+            <li><a href="services.html#event">Events Hall</a></li>
+            <li><a href="services.html#gym">Gym & Fitness</a></li>
+            <li><a href="services.html#spa">Pool</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>CONTACT US</h4>
+          <ul class="footer__links">
+            <li><a href="mailto:alarcosuites@gmail.com">alarcosuites@gmail.com</a></li>
+          </ul>
+          <div class="footer__socials">
+            <a href="https://www.facebook.com/p/Alarco-Hotels-Suites-100069453642676/" target="_blank"><img src="assets/facebook.png" alt="facebook" /></a>
+            <a href="https://wa.me/08165431312" target="_blank"><img src="assets/whatsapp.png" alt="whatsapp" /></a>
+            <a href="https://www.instagram.com/alarcohotel?igsh=MW9mZG4xNnBiNHptMw==" target="_blank"><img src="assets/instagram.png" alt="instagram" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 Alarco Hotels and Suites. All rights reserved.
+      </div>
+    </footer>
+
+
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: "auto",
+            spaceBetween: 30,
+            loop: true,
+            grabCursor: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                // When window width is >= 992px
+                992: {
+                    slidesPerView: 3,
+                },
+                // When window width is >= 768px and < 992px
+                768: {
+                    slidesPerView: 2,
+                },
+                // When window width is < 768px
+                0: {
+                    slidesPerView: 1,
+                }
+            }
+        });
+    </script>
+
+
+
+
+
+    
+
+
+
+
+
+
+    <!-- scroll to top -->
+    <div class="to-top">
+        <i class="ri-arrow-up-double-line"></i>
+    </div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

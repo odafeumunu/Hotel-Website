@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>STANDARD ROOM || ALARCO HOTELS AND SUITES</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.png" />
+
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  </head>
+  <body>
+
+    <header class="header" style="background-image: linear-gradient(rgba(27, 37, 51, 0.7), rgba(27, 37, 51, 0.7)), url(assets/standard-top.jpg);">
+      <nav>
+        <div class="nav__bar">
+          <div class="logo">
+            <a href="index.html"><img src="assets/logo.png" alt="logo" /></a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="room.html">Rooms</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="booking.php">
+          <button class="btn nav__btn">Book Now</button>
+        </a>
+      </nav>
+      <div class="section__container header__container" id="home">
+        <h1>
+          STANDARD <br>
+          ROOM
+        </h1>
+      </div>
+    </header>
+
+    <style>
+      .section__container.first {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: -50px;
+      }
+      .section__container.inn {
+        padding-top: 0;
+        padding-bottom: 5rem;
+      }
+      .int {
+        overflow: hidden;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: flex-start;
+        gap: 30px;
+        margin-bottom: 30px;
+      }
+      .section__subheader {
+        text-transform: uppercase;
+      }
+      .section__header {
+        font-size: 1.5rem;
+      }
+      .room__card {
+        position: relative;
+        box-shadow: none;
+      }
+      .room__card__image img {
+        height: auto;
+      }
+      .swiper {
+        width: 100%;
+      }
+      .swiper-wrapper h4 {
+        margin-bottom: 15px;
+        border-bottom: 1px dashed rgb(226, 226, 226);
+        padding-bottom: 5px;
+      }
+      .star i {
+        color: var(--primary-color);
+      }
+      .input__group {
+        text-align: left;
+      }
+      .room :is(.sect, .section__header) {
+        text-align: center;
+        margin-inline: auto;
+      }
+      .icon-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        max-width: 600px;
+      }
+      .icon-list i {
+        margin-right: 5px;
+      }
+      .room__container .swiper-button-next,
+      .room__container .swiper-button-prev {
+        opacity: 1;
+      }
+      .des p{
+        margin-bottom: 10px;
+      }
+      @media (max-width: 992px) {
+        .int {
+          grid-template-columns: subgrid;
+        }
+      }
+      @media (max-width: 768px) {
+        .int {
+          grid-template-columns: subgrid;
+        }
+      }
+    </style>
+
+    <section class="section__container booking__container">
+      <div class="booking__form">
+        <div class="input__group">
+          <div class="star">
+            <i class="ri-star-s-fill"></i>
+            <i class="ri-star-s-fill"></i>
+            <i class="ri-star-s-fill"></i>
+            <i class="ri-star-s-fill"></i>
+            <i class="ri-star-s-fill"></i>
+          </div>
+        </div>
+        <div class="input__group">
+          <h3>STANDARD ROOM</h3>
+        </div>
+        <div class="input__group">
+          <h3>₦20,000 per night</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container first room__container">
+      <div class="int">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- swiper-slide start -->
+            <div class="room__card swiper-slide">
+              <div class="room__card__image">
+                <img src="assets/standard-1.jpg" alt="room" />
+              </div>
+            </div>
+            <!-- swiper-slide end -->
+
+            <!-- swiper-slide start -->
+            <div class="room__card swiper-slide">
+              <div class="room__card__image">
+                <img src="assets/standard-2.jpg" alt="room" />
+              </div>
+            </div>
+            <!-- swiper-slide end -->
+
+            <!-- swiper-slide start -->
+            <div class="room__card swiper-slide">
+              <div class="room__card__image">
+                <img src="assets/standard-3.jpg" alt="room" />
+              </div>
+            </div>
+            <!-- swiper-slide end -->
+
+            <!-- swiper-slide start -->
+            <div class="room__card swiper-slide">
+              <div class="room__card__image">
+                <img src="assets/standard-4.jpg" alt="room" />
+              </div>
+            </div>
+            <!-- swiper-slide end -->
+
+            
+            <!-- swiper-slide start -->
+            <div class="room__card swiper-slide">
+              <div class="room__card__image">
+                <img src="assets/standard-5.jpg" alt="room" />
+              </div>
+            </div>
+            <!-- swiper-slide end -->
+
+            <!-- swiper-slide start -->
+            <div class="room__card swiper-slide">
+              <div class="room__card__image">
+                <img src="assets/standard-6.jpg" alt="room" />
+              </div>
+            </div>
+            <!-- swiper-slide end -->
+
+            <!-- swiper-slide start -->
+            <div class="room__card swiper-slide">
+              <div class="room__card__image">
+                <img src="assets/standard-7.jpg" alt="room" />
+              </div>
+            </div>
+            <!-- swiper-slide end -->
+
+            <!-- swiper-slide start -->
+            <div class="room__card swiper-slide">
+              <div class="room__card__image">
+                <img src="assets/standard-8.jpg" alt="room" />
+              </div>
+            </div>
+            <!-- swiper-slide end -->
+          </div>
+
+          <!-- control prev/next -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <!-- control prev/next -->
+        </div>
+        <!-- swiper end -->
+
+        <div class="des">
+          <h2 class="section__header">DESCRIPTION</h2>
+          <p class="section__description">
+            The Standard Room at Alarco Hotels and Suites is designed to offer guests a comfortable and welcoming space during their stay. Located in the heart of the city, the Standard Room combines modern amenities with tasteful decor, ensuring a relaxing retreat for both business and leisure travelers.
+          </p>
+          <p class="section__description">
+            Upon entering the Standard Room, guests are greeted with a sense of warmth and sophistication. The room features contemporary furnishings, soft lighting, and soothing colors, creating an inviting atmosphere for relaxation. The layout is thoughtfully designed to maximize space and functionality, providing guests with everything they need for a comfortable stay.
+          </p>
+          <p class="section__description">
+            Each Standard Room is equipped with a plush queen or king-sized bed, dressed in luxurious linens and pillows, guaranteeing a restful night's sleep. For added convenience, the room includes a spacious work desk and ergonomic chair, ideal for business travelers needing to catch up on work or stay connected with loved ones using the complimentary high-speed internet access.
+          </p>
+          <p class="section__description">
+            The en-suite bathroom is elegantly appointed with modern fixtures and amenities, including a walk-in shower, luxurious bathrobe, and premium toiletries, allowing guests to unwind and rejuvenate after a long day of sightseeing or meetings.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container inn room__container">
+      <h2 class="section__header">Amenities/ Services</h2>
+      <div class="icon-list">
+        <p class="section__description">
+          <i class="ri-wifi-line"></i>
+          Free WiFi
+        </p>
+        <p class="section__description">
+          <i class="ri-terminal-window-line"></i>
+          Air Conditional
+        </p>
+        <p class="section__description">
+          <i class="ri-showers-fill"></i>
+          Shower Room
+        </p>
+        <p class="section__description">
+          <i class="ri-hotel-bed-fill"></i>
+          Bed &amp; Linen
+        </p>
+        <p class="section__description">
+          <i class="ri-parking-box-line"></i>
+          Parking
+        </p>
+        <p class="section__description">
+            <i class="ri-drop-line"></i>
+            Pool Access
+        </p>
+        <p class="section__description">
+            <i class="ri-riding-line"></i>
+            Gym $ Fitness
+        </p>
+        <p class="section__description">
+            <i class="ri-terminal-window-line"></i>
+            Wardrobe
+        </p>
+        <p class="section__description">
+            <i class="ri-restaurant-line"></i>
+            Restaurant
+        </p>
+      </div>
+    </section>
+
+    <section class="section__container inn room__container">
+      <h2 class="section__header">Additional Information</h2>
+      <p class="section__description">
+        In-room entertainment options abound, with a flat-screen TV offering a variety of cable channels for guests to enjoy their favorite shows or movies from the comfort of their bed. A well-stocked minibar provides a selection of beverages and snacks for those moments of indulgence.
+
+Guests staying in the Standard Room also have access to the hotel's extensive facilities, including a fitness center, swimming pool, and business center, ensuring they have everything they need for a seamless and enjoyable stay.
+
+Whether traveling for business or leisure, the Standard Room at Alarco Hotels and Suites offers a tranquil haven in the midst of the bustling city, where guests can unwind, recharge, and create lasting memories.
+      </p>
+
+      <a href="booking.php">
+        <button class="btn">Book Now</button>
+      </a>
+    </section>
+
+    <footer class="footer" id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo">
+            <img src="assets/logo.png" alt="logo" />
+          </div>
+          <p class="section__description">
+            Discover a world of comfort, luxury, and adventure as you explore
+            our curated selection of hotels, making every moment of your getaway
+            truly extraordinary.
+          </p>
+          <a href="booking.php">
+            <button class="btn">Book Now</button>
+          </a>
+        </div>
+        <div class="footer__col">
+          <h4>QUICK LINKS</h4>
+          <ul class="footer__links">
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About us | Who we are</a></li>
+            <li><a href="room.html">Rooms and Amenities</a></li>
+            <li><a href="services.html">Our Services</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>OUR SERVICES</h4>
+          <ul class="footer__links">
+            <li><a href="services.html#restaurant">Restaurant</a></li>
+            <li><a href="services.html#bar">Bush Bar</a></li>
+            <li><a href="services.html#event">Events Hall</a></li>
+            <li><a href="services.html#gym">Gym & Fitness</a></li>
+            <li><a href="services.html#spa">Pool</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>CONTACT US</h4>
+          <ul class="footer__links">
+            <li><a href="mailto:alarcosuites@gmail.com">alarcosuites@gmail.com</a></li>
+          </ul>
+          <div class="footer__socials">
+            <a href="https://www.facebook.com/p/Alarco-Hotels-Suites-100069453642676/" target="_blank"><img src="assets/facebook.png" alt="facebook" /></a>
+            <a href="https://wa.me/08165431312" target="_blank"><img src="assets/whatsapp.png" alt="whatsapp" /></a>
+            <a href="https://www.instagram.com/alarcohotel?igsh=MW9mZG4xNnBiNHptMw==" target="_blank"><img src="assets/instagram.png" alt="instagram" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 Alarco Hotels and Suites. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        spaceBetween: 30,
+        loop: true,
+        grabCursor: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          // When window width is >= 992px
+          992: {
+            slidesPerView: 1,
+          },
+          // When window width is >= 768px and < 992px
+          768: {
+            slidesPerView: 2,
+          },
+          // When window width is < 768px
+          0: {
+            slidesPerView: 1,
+          },
+        },
+      });
+    </script>
+
+    <!-- scroll to top -->
+    <div class="to-top">
+      <i class="ri-arrow-up-double-line"></i>
+    </div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
